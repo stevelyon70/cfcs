@@ -1,0 +1,131 @@
+/* Default stylesheet for popup calendar */
+.cal-table {
+	font-family: arial;
+	border-width: 1; 
+	border-style: solid; 
+	border-color: #000000; 
+	background-color: #ffffff;
+	font-family: arial; 
+	font-size: 11px;
+}
+
+/* Default attributes of DIV containing table container for entire calendar.
+ * You probably don't want to alter this style.
+ */
+.cal-div {
+	z-index: +999;
+	position: absolute;
+	visibility: hidden;
+}
+
+/* Default attributes used in calendar title (month and year columns).*/
+.cal-title {
+	padding: 2px;
+	font-family: arial; 
+	font-size: 11px;
+	color: #00000;	
+}
+
+/* Default attributes used in calendar title background.*/
+.cal-title-background {
+	background-color: #ffffff;
+}
+
+/* Normal appearance of controls in calendar title. */
+/* Note: The right, left and down icons are images, which must be edited if you need to change them. */
+.cal-title-background {
+	border-style: solid;
+	border-width: 1;
+	border-color: #000000; 
+	cursor: pointer;
+}
+
+/* Moused-over (selected) appearance of controls in calendar title. */
+.cal-title-control-select{
+	border-style: solid;
+	border-width: 1;
+	border-color: #000000; 
+	cursor: pointer;
+}
+
+/* Default attributes of drop down lists (month and year). */
+.cal-dropdown {
+	font-family: arial; 
+	font-size: 11px; 
+	border-width: 1; 
+	border-style: solid; 
+	border-color: #000000;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+/* Default attributes selected (mouse-over) item in drop down lists (month and year). */
+.cal-dropdown-select {
+	background-color: #c0c0c0;
+}
+
+/* Default attributes unselected (mouse-off) item in drop down lists (month and year). */
+.cal-dropdown-normal {
+	background-color: #0;
+}
+
+/* Default attributes of calendar body (weekday titles and numbers). */
+.cal-body {
+	padding: 5px;
+	background-color: #ffffff;
+	font-family: verdana; 
+	font-size: 10px;
+	border-style: solid;
+	border-width: 1px; 
+	border-color: #000000;
+}
+
+/* Attributes of current day in calendar body. */
+.cal-current-day {
+	color: red;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Attributes of end-of-week days (Sundays) in calendar body. */
+.cal-end-of-weekday {
+	color: #909090;
+	text-decoration: none;
+}
+
+/* Attributes of all other days in calendar body. */
+.cal-normal-day {
+	color: black;
+	text-decoration: none;
+	border-style: solid;
+	border-width: 1px; 
+	border-color: #000000;
+}
+
+/* Attributes of border around selected day in calendar body. */
+.cal-selected-day {
+	border-style: solid;
+	border-width: 1px; 
+	border-color: #000000;
+}
+
+/* Default attributes of designated holidays. */
+.cal-holiday {
+	background-color: #FFDDDD;
+}
+
+/* Attributes of today display at bottom on calendar */
+.cal-today {
+	padding: 0px;
+	color: black;
+	font-weight:bold;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Attributes of week number division (divider.gif) */
+.cal-weeknumber-div {
+	background-color: #d0d0d0; 
+	padding: 0px;
+}

@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 844 px WIDE */
+@media screen and (max-width: 52.75em) { 
+
+/* LIGHTBOX GALLERY */
+.da-thumbs li {
+	float: none;
+	width: 100%;
+	margin: 0px auto;
+	background: #fff;
+	padding: 0px;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+header {
+	position:relative;
+	z-index: 2000;
+}
+
+.header-graphic-1, .header-graphic-2 {
+	display: none;
+}
+
+/* NAVIGATION */
+.nav {
+	width: 100%;
+	background-color: #ffffff;
+	float:right;
+	z-index: 10000;
+}
+.cbp-hrmenu {
+	font-size: 80%;
+	width: 100%;
+	float:none;
+	margin-top: 1.2em;
+	text-align:center;
+	z-index: 10000;
+}
+
+/* PAGE AND SECTION TITLES */
+.page-title {
+	font-size: 20px;
+	font-weight:800;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #4261ad;
+	text-align:center;
+}
+
+.page-title h1{
+	font-size: 25px;
+	font-weight:600;
+}
+	
+/* FEATURED SECTIONS */	
+.FeaturedContainer {
+	width: 100%;
+	max-width: 1520px;
+	margin: 5em auto;
+}
+
+.FeaturedContent {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 16px;
+	padding: 5px;
+	text-align:center;
+}
+
+.FeaturedContent p {
+	font-size: 16px;
+	color: #666666;
+	line-height:18px;
+}
+
+.Featured-Third {
+	width:95%;
+	float:none;
+	padding: 5px;
+}
+
+.Featured-Half {
+	width:95%;
+	font-size: 18px;
+	float:none;
+	padding: 3px;
+	color: #666666;
+	margin-bottom: 3em;
+	text-align:left;
+}
+	
+.Featured-Quarter{
+	width:100%;
+	font-size: 18px;
+	float:none;
+	padding: 10px;
+	color: #666666;
+	margin-bottom: 0;
+	border-right: 0px solid #e2e2e2;
+}
+
+.Featured-ThreeQuarter{
+	width:100%;
+	font-size: 16px;
+	float:none;
+	padding: 10px;
+	color: #666666;
+	margin-bottom: 10px;
+}
+
+/* FORM STYLES */	
+#form-div{
+	left: 3%;
+	margin-right: 3%;
+	width: 88%;
+	margin-left: 0;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+	
+
+.outer-wrap {
+	background-color:#11AB44;
+	height: 500px;
+	padding: 30px;
+}	
+.content-overlay img {
+	width: 100%;
+	text-align:center;
+	align-content:center;
+}
+
+/* PARALLAX VIDEO SECTION */
+video {
+	width: 100%;
+	height: auto;
+	display: none;
+ 	vertical-align: baseline;
+	z-index: 2;
+}
+.video-wrap {
+	height: auto;
+	width: 100%;
+	z-index: 2;
+}
+
+.content-overlay h1 {
+	font-size: 20px;
+	font-weight:800;
+}
+
+.text-overlay-example .video-wrap::before,
+.with-header-example .video-wrap::before {
+	content: '';
+	position: absolute;
+	height: auto;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: none;
+	z-index: 10;
+}
+
+/* FOOTER */
+.footer-link {
+	display:block;
+	width: auto;
+	padding-left:10px;
+	padding-right: 10px;
+	text-align: center;
+	align-content:center;	
+}
+}
+
+/* 688px WIDE */
+@media screen and (max-width: 43em) { 
+
+/* HEADER */
+.logo {
+	width: 100%;
+	padding: 1.5em;
+	float:none;
+}
+
+/* NAVIGATION*/
+.navigation {
+	width: 100%;
+	background-color: #ffffff;
+	float:left;
+	position:relative;
+	z-index: 10000;
+}
+
+.cbp-hrmenu {
+	font-size: 120%;
+	border: none;
+	width: 100%;
+	float:none;
+	margin-top: 1.2em;
+	text-align:center;
+}
+
+.cbp-hrmenu > ul,
+.cbp-hrmenu .cbp-hrsub-inner {
+	width: 100%;
+	padding: 0;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner {
+	padding: 0 2em;
+	font-size: 75%;
+}
+
+.cbp-hrmenu > ul > li {
+	display: block;
+}
+
+.cbp-hrmenu > ul > li > a { 
+	display: block;
+	padding: 1em 3em;
+}
+
+.cbp-hrmenu .cbp-hrsub { 
+	position: relative;
+}
+
+.cbp-hrsub h4 {
+	padding-top: 0.6em;
+}
+	
+/* FEATURED SECTIONS */
+.FeaturedContainer {
+	width: 95%;
+	margin: 0 auto;
+}
+}
+
+/* 576px WIDE */
+@media screen and (max-width: 36em) { 
+
+/* HEADER */
+header {
+	position:relative;
+	z-index: 2000;
+}
+
+/* NAVIGATION */
+.cbp-hrmenu .cbp-hrsub-inner > div {
+	width: 100%;
+	float: none;
+	padding: 0 2em;
+}
+
+.FeaturedContainer {
+	width: 95%;
+	margin: 0 auto;
+}
+}
+

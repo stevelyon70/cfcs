@@ -1,0 +1,102 @@
+
+<cfcomponent>
+
+
+	<cffunction name="modern" description="SALL Form" output="Yes" access="public">
+		<!--- arguments --->
+		<cfargument name="Get_Nav" required="true">
+		<cfargument name="Get_Phones" required="true">
+	
+		<cfquery datasource="Aspen10" name="Get_Dealer_Details">
+			SELECT		Dealer_ID,
+						Display_Name,
+						Dealer_Directory
+			FROM		Dealers
+			WHERE		Dealer_ID=<cfqueryparam cfsqltype="CF_SQL_INTEGER" value="#url.Dealer_ID#" maxlength="6">
+			ORDER BY 	Dealer_Name
+		</cfquery>
+		<cfset variables.dlr_dir = #Get_Dealer_Details.Dealer_Directory#>
+		
+		<section class="section-spl">
+			<div class="container">
+			 	<div class="row">
+					<div class="col-md-12 no-pad" align="center" >				<!--- Header --->
+						<img src="http://#cgi.server_name#/dealer/#variables.dlr_dir#/images/icons/logo.png" border="0" class="img-responsive"> 
+					</div>
+				</div> 
+			</div>
+		</section>
+		
+		<section class="section-spl">
+			<div class="container">
+					<div class="row">
+						<div class="row">
+							<div class="col-md-8 pull right" align="right" >	
+								<div class="col-md-12 pull right" align="right"  >	
+									<cfinvoke component="/cfcs/aspen10/forms/form_trade" method="tap_default">
+										<cfinvokeargument name="dealer_id" value="#arguments.dealer_id#"/>
+										<cfinvokeargument name="VOI_Vin" value=""/>
+										<cfinvokeargument name="VOI_New_Used" value=""/>
+										<cfinvokeargument name="form_name" value="quick_quote_mobile"/>
+										<cfinvokeargument name="form_action" value="http://#cgi.server_name#/forms/trade_action.cfm"/>
+									</cfinvoke>  
+								</div>
+							</div>
+							<div class="col-md-4 pull right" align="center"  >	
+								<img src="http://#cgi.server_name#/dealer/#variables.dlr_dir#/images/icons/hand.png" border="0" class="img-responsive"> 
+									
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 pull right" align="right"  >	
+								
+							</div>
+						</div>
+					</div>
+	
+					<div class="row"><div class="col-md-12">&nbsp;</div></div>
+					 <div class="row"> 
+							<div class="col-md-6 pull left" align="left" >	
+
+							</div>		
+						</div>
+					</div> 
+					
+					 <div class="row">
+						<div class="col-md-12 no-pad">	&nbsp;
+						</div>
+					</div>	 
+					 <div class="row">
+						<div class="col-md-12 no-pad visible-md visible-lg" align="center">
+							
+						</div>
+					</div>	  
+					<div class="row"><div class="col-md-12">&nbsp;</div></div>
+					 <div class="row">
+						<div class="col-md-12 no-pad">								<!--- Footer --->
+						</div>
+					</div> 
+					
+					 <div class="row">
+						<div class="col-md-12 no-pad">	&nbsp;
+						</div>
+					</div>	 
+			</div>  <!--- container --->
+		</section>
+
+	</cffunction>
+
+	<cffunction name="modernregthankyou" description="shows a standard header" output="Yes" access="public">
+
+	</cffunction>
+
+	<cffunction name="modernbaierlregthankyou" description="shows a Baierl Thanks Page" output="Yes" access="public">
+
+	</cffunction>
+
+	<cffunction name="legacy" description="shows a legacy splash page" output="Yes" access="public">
+
+
+	</cffunction>
+
+</cfcomponent>
