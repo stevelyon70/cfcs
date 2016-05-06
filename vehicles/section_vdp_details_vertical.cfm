@@ -22,6 +22,7 @@
 					<div class="col-md-9 pull-left  pad-top-10 pad-bottom-10 visible-lg visible-md visible-sm visible-xs ">
 					<div class="row"><div class="col-md-4 pad-top-10 visible-sm visible-xs visible-lg visible-md vdp-form-title">VEHICLE DETAILS</div></div>
 					
+					<!--- <cfif #len(rtrim(Get_Vehicle_Options.Misc))# gt 0>
 						<div class="panel panel-default">
 							<div class="col-md-2 panel-heading">
 								<a class="srp-filter-block" data-toggle="collapse" data-parent="##accordion" href="##collapseComment">
@@ -40,6 +41,7 @@
 							</div>
 							</div>
 						</div>
+					</cfif> --->
 					
 					
 					
