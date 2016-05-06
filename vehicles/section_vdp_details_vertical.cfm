@@ -21,6 +21,29 @@
 				<div class="row">  
 					<div class="col-md-9 pull-left  pad-top-10 pad-bottom-10 visible-lg visible-md visible-sm visible-xs ">
 					<div class="row"><div class="col-md-4 pad-top-10 visible-sm visible-xs visible-lg visible-md vdp-form-title">VEHICLE DETAILS</div></div>
+					
+						<div class="panel panel-default">
+							<div class="col-md-2 panel-heading">
+								<a class="srp-filter-block" data-toggle="collapse" data-parent="##accordion" href="##collapseComment">
+									Miscellaneous
+									<span class="glyphicon glyphicon-chevron-down pull-right"></span>
+								</a>
+							</div>
+							<div class="row" >
+							<div id="collapseComment" class="col-md-12 panel-collapse collapse">
+								<div class="panel-body">
+									<br><br>
+									<cfinvoke component="/cfcs/vehicles/vehicle_options" method="vdp_new">
+										<cfinvokeargument name="Misc" value="#Get_Vehicle_Options.Misc#"/>
+									</cfinvoke>
+								</div>
+							</div>
+							</div>
+						</div>
+					
+					
+					
+					
 						<ul class="col-md-3 nav nav-tabs  nav-stacked" > 
 								<cfif  #len(rtrim(arguments.Dealer_Comments))# GT 1  >
 							  		<li style="margin-bottom:#tab_spc#;margin-top:15px" > <a class="#active_class[1]# nav-tabs nav-tab1" data-toggle="tab" href="##tab1"><i class="glyphicon glyphicon-chevron-down"></i>&nbsp;Dealer Comments</a></li>
